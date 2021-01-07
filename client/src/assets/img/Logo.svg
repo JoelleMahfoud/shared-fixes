@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="111.241" height="118.938" viewBox="0 0 111.241 118.938">
+  <g id="Logo" transform="translate(1.063 1)">
+    <path id="Jam" d="M209.5,287.245s-2.877-13.842,16.816-21.095c0,0,10.749-4.314,17.537,2.181V179.68h1.8s7.552,19.674,9.4,21c0,0,8.139,9.859,11.916,15.547a34.525,34.525,0,0,1,4.271,27.119s-1.8,11.046-5.756,12.845c0,0-1.125.142-.674-1.7s3.73-7.587,3.64-19.774c0,0,.5-9.007-8.228-17.3,0,0-9.935-9.149-13.667-8.676v66.707s-.045,11.093-15.918,17.588C230.633,293.029,212.958,299.53,209.5,287.245Z" transform="translate(-209.353 -179.68)" fill="#01a479" stroke="#01a479" stroke-width="2"/>
+    <text id="i" transform="translate(16.823 71.943)" fill="#fffff2" stroke="#707070" stroke-width="1" font-size="55" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">i</tspan></text>
+    <text id="a" transform="translate(41.903 103.938)" fill="#fffff2" stroke="#707070" stroke-width="1" font-size="45" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">a</tspan></text>
+    <text id="m" transform="translate(68.178 104.938)" fill="#fffff2" stroke="#707070" stroke-width="1" font-size="46" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">m</tspan></text>
+  </g>
+</svg>

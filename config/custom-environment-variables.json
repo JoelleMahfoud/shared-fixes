@@ -1,0 +1,8 @@
+{
+	"privateAuthKey": "ijam_auth_key",
+	"db": {
+		"DB": "ijam_db_name",
+		"HOST": "ijam_db_host",
+		"PORT": "ijam_db_port"
+	}
+}

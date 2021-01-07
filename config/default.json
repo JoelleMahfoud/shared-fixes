@@ -1,0 +1,8 @@
+{
+	"privateAuthKey": "MFswDQYJKoZIhvcNAQEBBQADSgAwRwJAb1fz6h6gA9l2Bg0ERgJUGCrhtGKV7ziJ",
+	"db": {
+		"DB": "ijamdb",
+		"HOST": "localhost",
+		"PORT": 27017
+	}
+}
