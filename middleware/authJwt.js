@@ -1,27 +1,24 @@
 const jwt = require("jsonwebtoken");
-const config = require("config");
-const User = require("../models/User");
+const config = require("../config/auth.config.js");
+const User = require("../models/User")
+
 
 verifyToken = (req, res, next) => {
-  let token = req.headers["x-access-token"];
-
-  if (!token) {
-    return res.status(403).send({ message: "No token provided!" });
-  }
-
-  try {
-    jwt.verify(token, config.get('privateAuthKey'), (err, decoded) => {
-      if (err) {
-        return res.status(401).send({ message: "Unauthorized!" });
-      }
-      req.userId = decoded.id;
-      next();
+  var token = req.headers['x-access-token'];
+  if (!token) return res.status(401).send({ auth: false, message: 'No token provided.' });
+  
+  jwt.verify(token, config.secret, function(err, decoded) {
+    if (err) return res.status(500).send({ auth: false, message: 'Failed to authenticate token.' });
+    
+    User.findById(decoded.userId, {password: 0},function (err, user) {
+      ;
+      if (err) return res.status(500).send("There was a problem finding the user.");
+      if (!user) return res.status(404).send("No user found.");
+     
+      res.status(200).send(user);
+    })
     });
-  } catch (err) {
-    console.error("something wrong with auth middleware");
-    res.status(500).json({ msg: "Server Error" });
-  }
-};
+} 
 
 const authJwt = {
   verifyToken,

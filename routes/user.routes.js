@@ -10,8 +10,7 @@ router.get("/", users.findAll);
 // Retrieve a single Users with Username - Tested done
 router.get("/:username", users.findOne);
 
-router.get("/:id", [authJwt.verifyToken], controller.userBoard);
-
+router.get("/token", authJwt.verifyToken);
 // ADD update user info based on provided fields
 
 // Create a new User - Tested done
